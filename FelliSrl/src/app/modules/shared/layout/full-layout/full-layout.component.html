@@ -1,1 +1,11 @@
-<p>full-layout works!</p>
+<div class="body">
+  <header>
+    <app-header>
+      <ng-content select="[header]" ></ng-content>
+    </app-header>
+  </header>
+
+  <main class="vh-100 overflow-x-hidden">
+    <ng-content></ng-content>
+  </main>
+</div>

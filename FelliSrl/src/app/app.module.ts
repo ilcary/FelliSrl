@@ -5,16 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './modules/shared/layout/header/header.component';
 import { FullLayoutComponent } from './modules/shared/layout/full-layout/full-layout.component';
+import { HomepageComponent } from './modules/public/homepage/homepage.component';
+import {SharedModule} from "./modules/shared/shared.module";
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FullLayoutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
