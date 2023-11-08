@@ -1,0 +1,94 @@
+<div class="footer-container fixed-bottom">
+  <ng-container >
+
+    <!--Footer info-->
+    <div class="footer-info p-3">
+      <div class="row">
+        <!--Logo e contatti-->
+        <div class="col-12 logo-contacts d-flex justify-content-around">
+          <!--Logo-->
+          <div><img class="h-100 p-1" ngSrc="assets/images/Felli_srl_vector_white.svg" alt="Felli srl brand logo"
+                    height="150" width="150"></div>
+          <div>
+            <!--Lista contatti todo stile delle a-->
+            <div class="d-flex align-items-baseline flex-column gap-2">
+              <!--Intestazione Contatti-->
+              <h3 class="fs-4 fw-medium">Contatti</h3>
+
+              <!--Contatti Amministrazione-->
+              <div class="d-flex flex-column">
+                <div class="d-flex align-items-center gap-2">
+                  <p class="fs-6 m-0">
+                    Amministrazione
+                  </p>
+                  <mat-icon class="fs-5 h-100" arzia-hidden="false" aria-label="Icona amministrazione"
+                            fontIcon="source_environment"></mat-icon>
+                </div>
+                <p class="m-0"><a href="tel:086378227">0863 78227</a> | <a href="mailto:amministrazione@fellisrl.com">amministrazione@fellisrl.com</a>
+                </p>
+              </div>
+
+              <!--Contatti Commerciale-->
+              <div class="d-flex flex-column">
+                <div class="d-flex align-items-center gap-2">
+                  <p class="fs-6 m-0">
+                    Commerciale
+                  </p>
+                  <mat-icon class="fs-5 h-100" arzia-hidden="false" aria-label="Icona commerciale"
+                            fontIcon="sell"></mat-icon>
+                </div>
+                <p class="m-0"><a href="https://wa.me/3382477666">338 2477666</a> | <a
+                  href="mailto:antoniofelli09@gmail.com">antoniofelli09@gmail.com</a></p>
+              </div>
+
+            </div>
+          </div>
+
+          <!--Posizione e voci di navigazione-->
+          <div class="d-flex align-items-baseline flex-column gap-2">
+            <!--Intestazione Mappa-->
+            <h3 class="fs-4 fw-medium">Dove siamo</h3>
+            <!--Mappa-->
+            <div class="d-flex flex-column">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2962.40238635693!2d13.594505776093655!3d42.055993671222694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1330213b358fb94d%3A0x8b855057fdcb30b2!2sFelli%20Srl!5e0!3m2!1sit!2sit!4v1699208414110!5m2!1sit!2sit"
+                width="350" height="200" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="rounded"></iframe>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-baseline flex-column gap-2">
+            <!--Intestazione voci di navigazione-->
+            <h3 class="fs-4 fw-medium">Continua a navigare</h3>
+
+            <ul class="nav-link-list">
+              <li class="fw-medium fs-5">- Home</li>
+              <li class="fw-medium fs-5">- Gallery</li>
+              <li class="fw-medium fs-5">- Chi Siamo</li>
+              <li class="fw-medium fs-5">- Contatti</li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <ng-template [ngTemplateOutlet]="footerCopyright"></ng-template>
+
+  </ng-container>
+
+  <ng-template #mobileFooter>
+    <div class="footer-info p-3">
+
+    </div>
+    <ng-template [ngTemplateOutlet]="footerCopyright"></ng-template>
+  </ng-template>
+</div>
+
+<!--Copyright todo add terms, privacy and p.iva?-->
+<ng-template #footerCopyright>
+  <div class="footer-copyright px-3 py-2 text-center">
+    <p class="m-0">©2023 <span class="fs-6 fw-medium">Felli s.r.l.</span> - Tutti i diritti sono riservati</p>
+  </div>
+</ng-template>

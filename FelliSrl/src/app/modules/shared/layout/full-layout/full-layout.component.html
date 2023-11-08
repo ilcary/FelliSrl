@@ -1,11 +1,17 @@
 <div class="body">
   <header>
     <app-header>
-      <ng-content select="[header]" ></ng-content>
+      <ng-content select="[header]"></ng-content>
     </app-header>
   </header>
 
-  <main class="vh-100 overflow-x-hidden">
+  <main class="">
     <ng-content></ng-content>
   </main>
+
+  <footer>
+    <app-footer>
+    <ng-content select="[footer]"></ng-content>
+    </app-footer>
+  </footer>
 </div>

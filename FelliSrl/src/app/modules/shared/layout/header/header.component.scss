@@ -1,0 +1,14 @@
+@import "/src/assets/scss/variables.scss";
+
+.brand-logo {
+  img {
+    width: auto; /* Automatically adjust the width to maintain aspect ratio */
+    display: block;
+  }
+}
+
+/*Header rispettando il gradient del logo*/
+.mat-toolbar {
+  background: $felli-dark-red !important;
+  background: $felli-header-gradient !important;
+}

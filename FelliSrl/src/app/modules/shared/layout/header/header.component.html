@@ -1,1 +1,25 @@
-<p>header works!</p>
+<!--Navbar component-->
+<mat-toolbar color="primary">
+  <!--Logo-->
+  <div class="brand-logo h-100">
+    <img class="h-100 p-1" ngSrc="assets/images/Felli_srl_vector_header.svg" alt="Felli srl brand logo"
+         height="16" width="16">
+  </div>
+  <!--Voci di navigazione-->
+  <div class="d-flex w-100 justify-content-end gap-2">
+    <button class="fs-5" mat-button aria-label="Naviga all'homepage">
+      Home
+    </button>
+    <button class="fs-5" mat-button aria-label="Naviga alla galleria dei prodotti" (click)="null">
+      Gallery
+    </button>
+    <button class="fs-5" mat-button aria-label="Naviga ai contatti della Felli srl" (click)="null">
+      Contatti
+    </button>
+    <button class="fs-5" mat-button aria-label="Naviga alla biografia aziendale" (click)="null">
+      Chi siamo
+    </button>
+  </div>
+</mat-toolbar>
+
+

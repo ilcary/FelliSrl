@@ -1,1 +1,29 @@
+@import "~bootstrap/dist/css/bootstrap.css";
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/*Scrollbar styling*/
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  visibility: visible;
+  background-color: rgb(221, 221, 221);
+  border-radius: 0.2rem;
+}
+
+:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.33);
+}
