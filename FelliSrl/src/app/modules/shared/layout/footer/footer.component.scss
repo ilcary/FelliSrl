@@ -11,6 +11,10 @@
   color: white;
 }
 
+.heading{
+  color: $felli-light-red;
+}
+
 .nav-link-list {
   list-style-type: none;
   margin: 0;
@@ -18,4 +22,7 @@
   li{
     margin-bottom: 1rem;
   }
+}
+.social-icons{
+  fill: white;
 }

@@ -11,19 +11,7 @@ body {
 }
 
 /*Scrollbar styling*/
+/* Hide scrollbar for Chrome, Safari and Opera */
 ::-webkit-scrollbar {
-  background-color: transparent;
-  width: 0.5rem;
-  height: 0.5rem;
-}
-
-::-webkit-scrollbar-thumb {
-  visibility: visible;
-  background-color: rgb(221, 221, 221);
-  border-radius: 0.2rem;
-}
-
-:hover::-webkit-scrollbar-thumb {
-  visibility: visible;
-  background-color: rgba(0, 0, 0, 0.33);
+  display: none;
 }
