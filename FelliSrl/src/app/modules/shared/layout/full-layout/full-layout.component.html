@@ -1,0 +1,17 @@
+<div class="body">
+  <header>
+    <app-header>
+      <ng-content select="[header]"></ng-content>
+    </app-header>
+  </header>
+
+  <main class="main">
+    <ng-content></ng-content>
+
+  <footer>
+    <app-footer>
+    <ng-content select="[footer]"></ng-content>
+    </app-footer>
+  </footer>
+  </main>
+</div>

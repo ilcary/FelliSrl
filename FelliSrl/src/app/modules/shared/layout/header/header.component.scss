@@ -1,0 +1,66 @@
+@import "/src/assets/scss/variables.scss";
+
+/*.brand-logo {
+  img {
+    width: auto; !* Automatically adjust the width to maintain aspect ratio *!
+    display: block;
+  }
+}*/
+
+/*Header rispettando il gradient del logo*/
+
+nav.navbar {
+  background: $felli-dark-red !important;
+  background: $felli-header-gradient !important;
+}
+
+/*Animation navlink*/
+.nav-link {
+  box-shadow: inset 0 0 0 0 $prussian-blue;
+  color: $prussian-blue;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
+}
+
+@media (min-width:992px){
+.nav-link:hover {
+  box-shadow: inset 180px 0 0 0 $prussian-blue;
+  color: white;
+}
+}
+
+/*Animation Logo*/
+#Layer_1 {
+  fill: white;
+    transition: fill .4s ease-in-out;
+}
+
+.brand-logo:hover {
+  #Layer_1 {
+      fill: $prussian-blue;
+  }
+
+}
+
+/*toggler button styling*/
+.navbar-toggler{
+  border: unset;
+  padding: unset;
+  .material-icons{
+    color: white;
+    height: 100%;
+    width: 100%;
+    font-size: 3rem;
+  }
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+@media (max-width: 992px){
+/*todo query per menu mobile*/
+}
