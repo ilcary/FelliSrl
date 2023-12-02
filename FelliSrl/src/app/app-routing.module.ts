@@ -5,7 +5,12 @@ import {HomepageComponent} from "./modules/public/homepage/homepage.component";
 const routes: Routes = [
   {
     path: '',
-    component: HomepageComponent
+    children: [
+      {
+        path: '**',
+        loadChildren: () => import('./modules/public/public.module').then((m) => m.PublicModule),
+      }
+    ]
   }
 ];
 
@@ -13,4 +18,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule,]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}
