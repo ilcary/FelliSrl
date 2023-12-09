@@ -5,13 +5,8 @@ import {HomepageComponent} from "./modules/public/homepage/homepage.component";
 const routes: Routes = [
   {
     path: '',
-    children: [
-      {
-        path: '**',
-        loadChildren: () => import('./modules/public/public.module').then((m) => m.PublicModule),
-      }
-    ]
-  }
+    loadChildren: () => import('./modules/public/public.module').then((m) => m.PublicModule),
+  },
 ];
 
 @NgModule({
