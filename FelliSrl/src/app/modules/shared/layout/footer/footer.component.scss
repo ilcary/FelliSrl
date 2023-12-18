@@ -1,0 +1,28 @@
+@import "/src/assets/scss/variables.scss";
+
+.footer-info{
+  background-color: $prussian-blue;
+  color: white;
+}
+
+.footer-copyright{
+  background: $felli-dark-red;
+  background-color: $felli-red-gradient;
+  color: white;
+}
+
+.heading{
+  color: $felli-light-red;
+}
+
+.nav-link-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  li{
+    margin-bottom: 1rem;
+  }
+}
+.social-icons{
+  fill: white;
+}
