@@ -41,7 +41,7 @@
       </div>
       <!--Brand slogan-->
       <div class="brand-slogan">
-        <p class="fw-bold fst-italic m-0 text-start">
+        <p class="fw-bold fst-italic m-0 px-1 text-start">
           IMBALLAGGI FUORI MISURA <br> A MISURA PER TE
         </p>
       </div>
@@ -71,7 +71,7 @@
 
 <section class="certification-section fixed-background mb-5 px-3">
   <div class="certifications-container d-flex flex-column flex-md-row justify-content-center align-items-center gap-5 py-5">
-    <ng-container *ngFor="let certificate of animatedCards">
+    <ng-container *ngFor="let certificate of certifications">
     <app-animated-card [animatedCardContent]="certificate" ></app-animated-card>
     </ng-container>
   </div>

@@ -11,7 +11,8 @@
   color: white;
   height: 330px;
 
-    overflow-y: hidden;
+  overflow-y: hidden;
+
   img {
     overflow-y: hidden;
     max-width: 100%;
@@ -38,11 +39,10 @@
   }
 
   .brand-slogan {
-    p{
-    overflow-y: hidden;
+    p {
       font-size: 3rem;
+      line-height: 3rem;
     }
-    line-height: 3rem;
     text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgba(0, 0, 0, 0.33), 0 0 0.2em rgba(182, 182, 182, 0.16);
   }
 }
@@ -65,6 +65,7 @@
 .company-intro {
   div {
     max-width: 1200px;
+
     :first-child {
       color: $felli-light-red;
     }

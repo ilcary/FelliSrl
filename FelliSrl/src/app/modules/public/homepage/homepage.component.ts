@@ -31,7 +31,7 @@ export class HomepageComponent {
         callToAction:'Vai ai prodotti',
       },
     ]
-protected animatedCards: AnimatedCardContent[]=
+protected certifications: AnimatedCardContent[]=
   [
     {
       background: 'blue',
