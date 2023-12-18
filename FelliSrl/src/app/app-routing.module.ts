@@ -5,12 +5,13 @@ import {HomepageComponent} from "./modules/public/homepage/homepage.component";
 const routes: Routes = [
   {
     path: '',
-    component: HomepageComponent
-  }
+    loadChildren: () => import('./modules/public/public.module').then((m) => m.PublicModule),
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule,]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}
