@@ -1,1 +1,66 @@
-<p>about-us works!</p>
+<section class="card-info-about-us my-4 mx-4">
+
+  <div class="row card-container">
+    <div class="col-12 col-xl-4 about-us-section mobile-about-us">
+      <ng-container *ngTemplateOutlet="aboutUsInfo; context:{mobile:true}"></ng-container>
+    </div>
+    <div class="col-12 col-xl-8">
+      <div class="d-flex w-100 flex-lg-row flex-column gap-3">
+
+        <div class="w-100 card-info d-flex flex-column">
+          <div class="card-image object-fit-contain">
+            <img id="" class=""
+                 alt="Business indoor preview"
+                 src="./assets/images/aboutUs/quality-card.jpg">
+          </div>
+          <div class="card-description text-white h-xl-25 h-100 p-3">
+            <h2 class="fw-bold text-center mt-4"> QUALITÀ </h2>
+            <p class="text-center fs-5 mt-2"> nelle risorse materiali e umane a disposizione del cliente.</p>
+          </div>
+        </div>
+
+        <div class="w-100 card-info d-flex flex-column">
+          <div class="card-image object-fit-contain">
+            <img id="" class=""
+                 alt="Business indoor preview"
+                 src="./assets/images/aboutUs/pro-card.jpg">
+          </div>
+          <div class="card-description text-white h-xl-25 h-100 p-3">
+            <h2 class="fw-bold text-center mt-4"> ABILITÀ </h2>
+            <p class="text-center fs-5 mt-2"> nella creazione di prodotti secondo le vostre esigenze. </p>
+          </div>
+        </div>
+
+        <div class="w-100 card-info d-flex flex-column">
+          <div class="card-image object-fit-contain">
+            <img id="" class=""
+                 alt="Business indoor preview"
+                 src="./assets/images/aboutUs/respect-card.jpg">
+          </div>
+          <div class="card-description text-white h-xl-25 h-100 p-3">
+            <h2 class="fw-bold text-center mt-4"> RISPETTO </h2>
+            <p class="text-center fs-5 mt-2"> dell'ambiente grazie all'approccio eco-friendly nei nostri impianti. </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-12 col-xl-4 about-us-section desktop-about-us">
+      <ng-container *ngTemplateOutlet="aboutUsInfo"></ng-container>
+    </div>
+  </div>
+
+</section>
+
+<ng-template #aboutUsInfo let-mobile="mobile">
+  <div class="text-container d-flex flex-column justify-content-center h-100" [ngClass]="{'px-1':mobile,'px-4':!mobile}">
+    <div class="text-center">
+      <h1 class="fw-bolder" [ngClass]="{'mb-2':mobile,'mb-4':!mobile}">CHI SIAMO?</h1>
+      <p class="fw-medium fs-5 about-us-paragraph">La Felli S.r.l. è un'azienda specializzata nella lavorazione del
+        legno con un focus particolare sulla produzione di imballaggi su misura e il ripristino di pallet. L'azienda si distingue per la sua attenzione
+        all'impatto ambientale positivo. Attraverso l'utilizzo di materiali sostenibili e processi produttivi
+        efficienti, La Felli S.r.l. si impegna a fornire soluzioni personalizzate per soddisfare le esigenze specifiche
+        dei clienti, garantendo al contempo la massima qualità e la riduzione degli sprechi.</p>
+    </div>
+  </div>
+</ng-template>
