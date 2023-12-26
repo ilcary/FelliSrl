@@ -13,7 +13,7 @@ import { FooterComponent } from './layout/footer/footer.component';
     imports: [
         CommonModule, MaterialModule, NgOptimizedImage,
     ],
-  exports: [CommonModule, DirectivesModule, ComponentsModule, FullLayoutComponent]
+   exports: [CommonModule, DirectivesModule, ComponentsModule, FullLayoutComponent]
 })
 export class SharedModule {
 }

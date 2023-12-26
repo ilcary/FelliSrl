@@ -21,7 +21,7 @@ export class ScreenBreakpointService implements OnInit, OnDestroy {
   smBreakpoint = "(321px <= width <= 420px)";
   mdBreakpoint = "(421px <= width <= 768px)";
   lgBreakpoint = "(769px <= width <= 1024px)";
-  xlBreakpoint = "(1025px <= width <= 1440px)";
+  xlBreakpoint = "(min-width: 1200px)";
   xxlBreakpoint = "(min-width: 1441px)";
 
   private stopListening = new Subject();
