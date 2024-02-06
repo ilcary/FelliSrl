@@ -33,3 +33,35 @@ a {
     height: 25% !important;
   }
 }
+
+.bg-felli-red {
+  background-color: $felli-dark-red;
+}
+
+.btn-outline-felli-red {
+  color: $felli-dark-red;
+  border-color: $felli-dark-red;
+
+  &:hover {
+    color: #fff;
+    background-color: $felli-dark-red;
+    border-color: $felli-dark-red;
+  }
+
+  &:focus {
+    --bs-box-shadow: 13, 110, 253;
+  }
+
+  &:active {
+    color: #fff;
+    background-color: $felli-dark-red;
+    border-color: $felli-dark-red;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  }
+
+  &:disabled {
+    color: $felli-dark-red;
+    background-color: transparent;
+    border-color: $felli-dark-red;
+  }
+}
