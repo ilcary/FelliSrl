@@ -14,6 +14,7 @@ import {
 import {map, Observable} from "rxjs";
 import {Title} from "@angular/platform-browser";
 import {ScreenBreakpointService} from "../../../core/services/screen-breakpoint.service";
+import {GalleryCard} from "../../shared/components/product-card/product-card.component";
 
 @Component({
   selector: 'app-gallery',
@@ -27,21 +28,31 @@ export class GalleryPageComponent implements OnInit {
   readonly arr = data;
   readonly media$: Observable<GalleryConfig>;
 
+  get galleryCardSorted(){
+    let galleryResult:GalleryCard[][];
+    const chunks: any[][] = [];
+    for (let i = 0; i < galleryCards.length; i += 3) {
+      chunks.push(galleryCards.slice(i, i + 3));
+    }
+    return chunks;
+  }
+
   constructor() {
-      this.media$ = this.screenBreakpointService.isMobile.pipe(
-        map((isMobile: boolean) => {
-          if (isMobile) {
-            return {
-              thumbWidth: 80,
-              thumbHeight: 80
-            };
-          }
+    console.log(this.galleryCardSorted)
+    this.media$ = this.screenBreakpointService.isMobile.pipe(
+      map((isMobile: boolean) => {
+        if (isMobile) {
           return {
-            thumbWidth: 120,
-            thumbHeight: 90
+            thumbWidth: 80,
+            thumbHeight: 80
           };
-        })
-      );
+        }
+        return {
+          thumbWidth: 120,
+          thumbHeight: 90
+        };
+      })
+    );
   }
 
   ngOnInit() {
@@ -133,4 +144,89 @@ const data: GalleryItemData[] = [
     thumb: '../../../../assets/images/gallery/13.jpg',
   } as ImageItemData
 ];
+
+const galleryCards: GalleryCard[] = [
+  {
+    img: "../../../../assets/images/gallery/1.jpg",
+    title: "Special title treatment 1",
+    description: "With supporting text below as a natural lead-in to additional content 1.",
+    callback: () => {
+      // Add your callback logic for card 1 here
+      console.log("Callback for card 1 clicked");
+    }
+  },
+  {
+    img: "../../../../assets/images/gallery/2.jpg",
+    title: "Special title treatment 2",
+    description: "With supporting text below as a natural lead-in to additional content 2.",
+    callback: () => {
+      // Add your callback logic for card 2 here
+      console.log("Callback for card 2 clicked");
+    }
+  },
+  {
+    img: "../../../../assets/images/gallery/3.jpg",
+    title: "Special title treatment 3",
+    description: "With supporting text below as a natural lead-in to additional content 3.",
+    callback: () => {
+      // Add your callback logic for card 3 here
+      console.log("Callback for card 3 clicked");
+    }
+  },
+  {
+    img: "../../../../assets/images/gallery/4.jpg",
+    title: "Special title treatment 4",
+    description: "With supporting text below as a natural lead-in to additional content 4.",
+    callback: () => {
+      // Add your callback logic for card 4 here
+      console.log("Callback for card 4 clicked");
+    }
+  },
+  {
+    img: "../../../../assets/images/gallery/5.jpg",
+    title: "Special title treatment 5",
+    description: "With supporting text below as a natural lead-in to additional content 5.",
+    callback: () => {
+      // Add your callback logic for card 5 here
+      console.log("Callback for card 5 clicked");
+    }
+  },
+  {
+    img: "../../../../assets/images/gallery/6.jpg",
+    title: "Special title treatment 6",
+    description: "With supporting text below as a natural lead-in to additional content 6.",
+    callback: () => {
+      // Add your callback logic for card 6 here
+      console.log("Callback for card 6 clicked");
+    }
+  },
+  {
+    img: "../../../../assets/images/gallery/7.jpg",
+    title: "Special title treatment 7",
+    description: "With supporting text below as a natural lead-in to additional content 7.",
+    callback: () => {
+      // Add your callback logic for card 7 here
+      console.log("Callback for card 7 clicked");
+    }
+  },
+  {
+    img: "../../../../assets/images/gallery/8.jpg",
+    title: "Special title treatment 8",
+    description: "With supporting text below as a natural lead-in to additional content 8.",
+    callback: () => {
+      // Add your callback logic for card 8 here
+      console.log("Callback for card 8 clicked");
+    }
+  },
+  {
+    img: "../../../../assets/images/gallery/9.jpg",
+    title: "Special title treatment 9",
+    description: "With supporting text below as a natural lead-in to additional content 9.",
+    callback: () => {
+      // Add your callback logic for card 9 here
+      console.log("Callback for card 9 clicked");
+    }
+  }
+];
+
 

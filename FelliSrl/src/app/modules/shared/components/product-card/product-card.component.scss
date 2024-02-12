@@ -1,0 +1,22 @@
+@import "/src/assets/scss/variables.scss";
+
+.card {
+  background-color: transparent;
+
+  .img-fluid {
+    border-radius: 0.4rem 0.4rem 0 0;
+  }
+
+  &:hover {
+    .card-body {
+      background-color: $prussian-blue;
+      transition: 300ms;
+    }
+  }
+
+  .card-body {
+    color: #fff;
+    background-color: $felli-dark-red;
+    border-radius: 0 0 0.4rem 0.4rem;
+  }
+}

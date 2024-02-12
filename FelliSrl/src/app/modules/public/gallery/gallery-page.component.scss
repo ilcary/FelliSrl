@@ -1,3 +1,4 @@
+@import "/src/assets/scss/variables.scss";
 
 .image-info {
   position: relative;
@@ -57,6 +58,19 @@
   }
 }
 
+/*INTRO SECTION*/
+.company-intro {
+  div {
+    max-width: 1200px;
+
+    :first-child {
+      color: $felli-light-red;
+    }
+  }
+
+  line-height: 28px;
+}
+
 #gradient-horizontal {
   --color-stop-1: rgb(215, 56, 42);
   --color-stop-2: rgb(174, 37, 39);
@@ -69,6 +83,15 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 5;
+}
+
+/*Products carousel*/
+.products-carousel{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-image: url('/assets/images/gallery/pruducts-bg.jpg');
 }
 
 /*Gallery*/

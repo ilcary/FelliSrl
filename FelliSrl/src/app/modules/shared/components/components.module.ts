@@ -2,18 +2,21 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from './card/card.component';
 import { AnimatedCardComponent } from './animated-card/animated-card.component';
+import { ProductCardComponent } from './product-card/product-card.component';
 
 
 
 @NgModule({
   declarations: [
     CardComponent,
-    AnimatedCardComponent
+    AnimatedCardComponent,
+    ProductCardComponent
   ],
-  exports: [
-    CardComponent,
-    AnimatedCardComponent
-  ],
+    exports: [
+        CardComponent,
+        AnimatedCardComponent,
+        ProductCardComponent
+    ],
   imports: [
     CommonModule
   ]
