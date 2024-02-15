@@ -58,6 +58,15 @@
   }
 }
 
+/* Centered text */
+.absolute-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
 /*INTRO SECTION*/
 .company-intro {
   div {
@@ -76,14 +85,6 @@
   --color-stop-2: rgb(174, 37, 39);
 }
 
-/* Centered text */
-.absolute-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 5;
-}
 
 /*Products carousel*/
 .products-carousel{
