@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CardComponent } from './card/card.component';
 import { AnimatedCardComponent } from './animated-card/animated-card.component';
 import { ProductCardComponent } from './product-card/product-card.component';
+import { PageGenericHeaderComponent } from './page-generic-header/page-generic-header.component';
 
 
 
@@ -10,12 +11,14 @@ import { ProductCardComponent } from './product-card/product-card.component';
   declarations: [
     CardComponent,
     AnimatedCardComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    PageGenericHeaderComponent
   ],
     exports: [
         CardComponent,
         AnimatedCardComponent,
-        ProductCardComponent
+        ProductCardComponent,
+        PageGenericHeaderComponent
     ],
   imports: [
     CommonModule

@@ -1,20 +1,10 @@
 import {Component, inject, OnInit} from '@angular/core';
 import {slideInAnimation} from "./slide-text.animation";
-import {
-  Gallery,
-  GalleryConfig,
-  GalleryItemData,
-  GalleryItemTypes,
-  IframeItemData,
-  ImageItemData,
-  VideoItemData,
-  YoutubeItemData,
-  GalleryModule
-} from 'ng-gallery';
+import {Gallery, GalleryConfig, GalleryItemData, GalleryItemTypes, ImageItemData} from 'ng-gallery';
 import {map, Observable} from "rxjs";
-import {Title} from "@angular/platform-browser";
 import {ScreenBreakpointService} from "../../../core/services/screen-breakpoint.service";
 import {GalleryCard} from "../../shared/components/product-card/product-card.component";
+import {PageGenericHeaderModel} from "../../shared/components/page-generic-header/page-generic-header.component";
 
 @Component({
   selector: 'app-gallery',
@@ -23,8 +13,9 @@ import {GalleryCard} from "../../shared/components/product-card/product-card.com
   animations: [slideInAnimation],
 })
 export class GalleryPageComponent implements OnInit {
+  protected pageModel: PageGenericHeaderModel = {imgSrc:'./assets/images/gallery/gallery-bg.jpg', imgAlt: 'Image indoor preview as background', title: 'I NOSTRI PRODOTTI'};
   private screenBreakpointService: ScreenBreakpointService = inject(ScreenBreakpointService);
-  private _gallery: Gallery = inject(Gallery);
+  private gallery: Gallery = inject(Gallery);
   readonly arr = data;
   readonly media$: Observable<GalleryConfig>;
 
@@ -56,7 +47,7 @@ export class GalleryPageComponent implements OnInit {
   }
 
   ngOnInit() {
-    const galleryRef = this._gallery.ref('mixed');
+    const galleryRef = this.gallery.ref('mixed');
 
     this.arr.map((item: GalleryItemData) => {
       switch (item.type) {

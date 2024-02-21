@@ -1,68 +1,72 @@
-<section class="card-info-about-us my-4 mx-4">
+<div class="smooth-appear">
 
-  <div class="row card-container">
-    <div class="col-12 col-xl-4 about-us-section mobile-about-us">
-      <ng-container *ngTemplateOutlet="aboutUsInfo; context:{mobile:true}"></ng-container>
-    </div>
-    <div class="col-12 col-xl-8">
-      <div class="d-flex w-100 flex-lg-row flex-column gap-3">
+  <section class="card-info-about-us my-4 mx-4">
 
-        <div class="w-100 card-info d-flex flex-column">
-          <div class="card-image object-fit-contain">
-            <img id="" class=""
-                 alt="Business indoor preview"
-                 src="./assets/images/aboutUs/quality-card.jpg">
+    <div class="row card-container">
+      <div class="col-12 col-xl-4 about-us-section mobile-about-us">
+        <ng-container *ngTemplateOutlet="aboutUsInfo; context:{mobile:true}"></ng-container>
+      </div>
+      <div class="col-12 col-xl-8">
+        <div class="d-flex w-100 flex-lg-row flex-column gap-3">
+
+          <div class="w-100 card-info d-flex flex-column">
+            <div class="card-image object-fit-contain">
+              <img id="" class=""
+                   alt="Business indoor preview"
+                   src="./assets/images/aboutUs/quality-card.jpg">
+            </div>
+            <div class="card-description text-white h-xl-25 h-100 p-3">
+              <h2 class="fw-bold text-center mt-4"> QUALITÀ </h2>
+              <p class="text-center fs-5 mt-2"> nelle risorse materiali e umane a disposizione del cliente.</p>
+            </div>
           </div>
-          <div class="card-description text-white h-xl-25 h-100 p-3">
-            <h2 class="fw-bold text-center mt-4"> QUALITÀ </h2>
-            <p class="text-center fs-5 mt-2"> nelle risorse materiali e umane a disposizione del cliente.</p>
+
+          <div class="w-100 card-info d-flex flex-column">
+            <div class="card-image object-fit-contain">
+              <img id="" class=""
+                   alt="Business indoor preview"
+                   src="./assets/images/aboutUs/pro-card.jpg">
+            </div>
+            <div class="card-description text-white h-xl-25 h-100 p-3">
+              <h2 class="fw-bold text-center mt-4"> ABILITÀ </h2>
+              <p class="text-center fs-5 mt-2"> nella creazione di prodotti secondo le vostre esigenze. </p>
+            </div>
           </div>
+
+          <div class="w-100 card-info d-flex flex-column">
+            <div class="card-image object-fit-contain">
+              <img id="" class=""
+                   alt="Business indoor preview"
+                   src="./assets/images/aboutUs/respect-card.jpg">
+            </div>
+            <div class="card-description text-white h-xl-25 h-100 p-3">
+              <h2 class="fw-bold text-center mt-4"> RISPETTO </h2>
+              <p class="text-center fs-5 mt-2"> dell'ambiente grazie all'approccio eco-friendly nei nostri
+                impianti. </p>
+            </div>
+          </div>
+
         </div>
-
-        <div class="w-100 card-info d-flex flex-column">
-          <div class="card-image object-fit-contain">
-            <img id="" class=""
-                 alt="Business indoor preview"
-                 src="./assets/images/aboutUs/pro-card.jpg">
-          </div>
-          <div class="card-description text-white h-xl-25 h-100 p-3">
-            <h2 class="fw-bold text-center mt-4"> ABILITÀ </h2>
-            <p class="text-center fs-5 mt-2"> nella creazione di prodotti secondo le vostre esigenze. </p>
-          </div>
-        </div>
-
-        <div class="w-100 card-info d-flex flex-column">
-          <div class="card-image object-fit-contain">
-            <img id="" class=""
-                 alt="Business indoor preview"
-                 src="./assets/images/aboutUs/respect-card.jpg">
-          </div>
-          <div class="card-description text-white h-xl-25 h-100 p-3">
-            <h2 class="fw-bold text-center mt-4"> RISPETTO </h2>
-            <p class="text-center fs-5 mt-2"> dell'ambiente grazie all'approccio eco-friendly nei nostri impianti. </p>
-          </div>
-        </div>
-
+      </div>
+      <div class="col-12 col-xl-4 about-us-section desktop-about-us">
+        <ng-container *ngTemplateOutlet="aboutUsInfo"></ng-container>
       </div>
     </div>
-    <div class="col-12 col-xl-4 about-us-section desktop-about-us">
-      <ng-container *ngTemplateOutlet="aboutUsInfo"></ng-container>
+
+  </section>
+
+  <section class="yt-player my-5">
+
+    <div class="d-flex justify-content-center py-5">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=7seoSdGDkqlg0k6B"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
     </div>
-  </div>
 
-</section>
+  </section>
 
-<section class="yt-player my-5">
-
-  <div class="d-flex justify-content-center py-5">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=7seoSdGDkqlg0k6B"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-  </div>
-
-</section>
-
+</div>
 <ng-template #aboutUsInfo let-mobile="mobile">
   <div class="text-container d-flex flex-column justify-content-center h-100"
        [ngClass]="{'px-1':mobile,'px-4':!mobile}">

@@ -5,6 +5,7 @@ import {AnimatedCardContent} from "../../shared/components/animated-card/animate
 import {tap} from "rxjs";
 import {takeUntilDestroyed} from "@angular/core/rxjs-interop";
 import {Router} from "@angular/router";
+import {PageGenericHeaderModel} from "../../shared/components/page-generic-header/page-generic-header.component";
 
 @Component({
   selector: 'app-homepage',
@@ -15,12 +16,23 @@ export class HomepageComponent {
   private screenBreakpointService: ScreenBreakpointService = inject(ScreenBreakpointService);
   private router: Router = inject(Router);
   protected isMobile: boolean = false;
+  protected pageModel: PageGenericHeaderModel = {
+    imgSrc: './assets/images/homepage-main-section.jpg',
+    imgAlt: 'Image indoor preview as background',
+    title: this.isMobile ? 'IMBALLAGGI FUORI MISURA A MISURA PER TE' : 'IMBALLAGGI FUORI MISURA <br> A MISURA PER TE'
+  };
   protected logoDimensions: { width: string, height: string } = {width: '250', height: '250'};
 
   constructor() {
     this.screenBreakpointService.isMobile.pipe(takeUntilDestroyed(), tap((isMobile: boolean) => {
       this.logoDimensions = {width: isMobile ? '100' : '250', height: isMobile ? '100' : '250'}
       this.isMobile = isMobile
+      this.pageModel = {
+        imgSrc: './assets/images/homepage-main-section.jpg',
+        imgAlt: 'Image indoor preview as background',
+        title: this.isMobile ? 'IMBALLAGGI FUORI MISURA A MISURA PER TE' : 'IMBALLAGGI FUORI MISURA <br> A MISURA PER TE'
+      };
+
     })).subscribe()
   }
 
