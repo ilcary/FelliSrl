@@ -1,6 +1,12 @@
+<!--
 <div class="card d-flex flex-md-row">
   <div class="w-100">
     <img class="card-img-top h-100 w-100" [src]="cardContent.imagePath" alt="Card image cap">
+  </div>
+  <div class="container-fluid py-5">
+    <h1 class="display-5 fw-bold">{{cardContent.headingParagraph}}</h1>
+    <p class="col-md-8 fs-4">{{cardContent.textParagraph}}</p>
+    <button class="btn btn-primary btn-lg" type="button">Example button</button>
   </div>
   <div class="card-body text-center bg-gradient-blue w-100">
     <div class="d-flex flex-column p-1 p-md-3 h-100">
@@ -14,5 +20,18 @@
       <button type="button" (click)="cardContent.action" class="btn bg-felli-red text-white fw-medium">{{cardContent.callToAction}}</button>
     </div>
     </div>
+  </div>
+</div>
+-->
+
+<div class="card-container px-5 py-3 rounded-3 d-lg-flex"
+     [ngClass]="{'flex-row-reverse':reverse,'flex-row':!reverse}">
+  <div class="w-100 d-lg-flex"[ngClass]="{'justify-content-lg-end':reverse}">
+    <img class="card-img-top" [src]="cardContent.imagePath" alt="Card image cap">
+  </div>
+  <div class="card-info container-fluid py-3" [ngClass]="{'text-lg-end':!reverse}">
+    <h1 class="display-5 fs-3 fw-bold">{{cardContent.headingParagraph}}</h1>
+    <p class="col-md-8" [ngClass]="{'reverse':!reverse}">{{cardContent.textParagraph}}</p>
+    <button class="btn btn-primary btn-lg" (click)="cardContent.action()" type="button">{{cardContent.callToAction}}</button>
   </div>
 </div>

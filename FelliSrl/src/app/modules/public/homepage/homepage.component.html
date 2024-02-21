@@ -61,9 +61,10 @@
 </section>
 
 <section class="cards-section mb-5 px-3">
-  <div class="cards-container d-flex flex-column align-items-center gap-5">
-    <ng-container *ngFor="let card of cards">
-      <app-card [cardContent]="card"></app-card>
+
+  <div class="cards-container d-flex flex-column align-items-center gap-4">
+    <ng-container *ngFor="let card of cards; let i = index">
+      <app-card [cardContent]="card" [reverse]="i % 2 === 0"></app-card>
     </ng-container>
   </div>
 </section>

@@ -1,11 +1,11 @@
 import {Component, Input} from '@angular/core';
 
-export interface CardContent{
-  imagePath:string;
-  headingParagraph:string;
-  textParagraph:string;
-  callToAction?:string;
-  action?: ()=>void;
+export interface CardContent {
+  imagePath: string;
+  headingParagraph: string;
+  textParagraph: string;
+  callToAction?: string;
+  action: () => void;
 }
 
 @Component({
@@ -14,6 +14,7 @@ export interface CardContent{
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent {
-  @Input()cardContent:CardContent;
+  @Input() cardContent: CardContent;
+  @Input() reverse: boolean = true;
 
 }
