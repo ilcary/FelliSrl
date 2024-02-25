@@ -13,7 +13,7 @@ import {PageGenericHeaderModel} from "../../shared/components/page-generic-heade
   animations: [slideInAnimation],
 })
 export class GalleryPageComponent implements OnInit {
-  protected pageModel: PageGenericHeaderModel = {imgSrc:'./assets/images/gallery/gallery-bg.jpg', imgAlt: 'Image indoor preview as background', title: 'I NOSTRI PRODOTTI'};
+  protected pageModel: PageGenericHeaderModel = {imgSrc:'./assets/images/gallery/gallery-bg.png', imgAlt: 'Image indoor preview as background', title: 'I NOSTRI PRODOTTI'};
   private screenBreakpointService: ScreenBreakpointService = inject(ScreenBreakpointService);
   private gallery: Gallery = inject(Gallery);
   readonly arr = data;

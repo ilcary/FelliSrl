@@ -24,7 +24,7 @@ nav.navbar {
 }
 
 @media (min-width:992px){
-.nav-link:hover {
+.nav-link:hover, .nav-link.active-page {
   box-shadow: inset 180px 0 0 0 $prussian-blue;
   color: white;
 }

@@ -7,6 +7,6 @@ import {PageGenericHeaderModel} from "../../shared/components/page-generic-heade
   styleUrls: ['./work-with-us.component.scss']
 })
 export class WorkWithUsComponent {
-  protected pageModel: PageGenericHeaderModel = {imgSrc:'./assets/images/gallery/gallery-bg.jpg', imgAlt: 'Image indoor preview as background', title: 'LAVORA CON NOI'};
+  protected pageModel: PageGenericHeaderModel = {imgSrc:'./assets/images/workWithUs/workWithUs-bg.jpg', imgAlt: 'Image indoor preview as background', title: 'LAVORA CON NOI'};
 
 }

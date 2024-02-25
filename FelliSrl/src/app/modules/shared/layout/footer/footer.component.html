@@ -87,11 +87,22 @@
             <h3 class="fs-4 fw-bold heading mb-1">Continua a navigare</h3>
 
             <ul class="nav-link-list">
-              <li class="fw-medium fs-5">- Home</li>
-              <li class="fw-medium fs-5">- Gallery</li>
-              <li class="fw-medium fs-5">- Chi Siamo</li>
-              <li class="fw-medium fs-5">- Contatti</li>
-              <li class="fw-medium fs-5">- Lavora con noi</li>
+              <li class="fw-medium"><a class="nav-link active fs-4 fw-medium text-white" aria-current="page"
+                                            [routerLink]="'/home'" [routerLinkActive]="'active-page'">- Home</a>
+              </li>
+              <li class="fw-medium"><a class="nav-link active fs-4 fw-medium text-white" aria-current="page"
+                                            [routerLink]="'/gallery'" [routerLinkActive]="'active-page'">- Gallery</a>
+              </li>
+              <li class="fw-medium"><a class="nav-link active fs-4 fw-medium text-white" aria-current="page"
+                                            [routerLink]="'/contatti'" [routerLinkActive]="'active-page'">- Contatti</a>
+              </li>
+              <li class="fw-medium"><a class="nav-link active fs-4 fw-medium text-white" aria-current="page"
+                                            [routerLink]="'/chi-siamo'" [routerLinkActive]="'active-page'">- Chi siamo</a>
+              </li>
+              <li class="fw-medium"><a class="nav-link active fs-4 fw-medium text-white" aria-current="page"
+                                            [routerLink]="'/lavora-con-noi'" [routerLinkActive]="'active-page'">- Lavora
+                con noi</a>
+              </li>
             </ul>
 
           </div>
