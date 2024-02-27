@@ -41,21 +41,21 @@ export class HomepageComponent {
       {
         imagePath: '/assets/images/card1.jpg',
         headingParagraph: 'La nostra realtà',
-        textParagraph: 'Scopri di più su di noi! La Felli S.r.l., è il tuo partner affidabile per gli imballaggi terziari e del legno. Con oltre vent\'anni di esperienza, puntiamo a diventare il punto di riferimento per l\'economia circolare degli imballaggi in legno nel centro Italia.',
+        textParagraph: 'Fondata nel 2018 a Cerchio (AQ), la Felli S.r.l. è un\'azienda familiare con oltre 20 anni di esperienza, specializzata in produzione e commercializzazione di pallet in legno.',
         callToAction: 'Chi siamo',
         action: () => this.router.navigate(['/chi-siamo'])
       },
       {
         imagePath: '/assets/images/card2.jpg',
         headingParagraph: 'I Nostri Prodotti',
-        textParagraph: 'La Felli S.r.l. produce non solo pallet standard ma anche imballaggi industriali in legno su misura per vari settori, fornendo soluzioni personalizzate per spedizioni in Europa e all\'estero, con legname certificato FSC® da fornitori europei ed esteri.',
+        textParagraph: ' Esplora la nostra gamma di imballaggi industriali in legno su misura. Soluzioni sostenibili e di qualità progettati per soddisfare le esigenze specifiche di diversi settori.',
         callToAction: 'Vai ai prodotti',
         action: () => this.router.navigate(['/gallery'])
       },
       {
         imagePath: '/assets/images/card3.jpg',
         headingParagraph: 'La Nostra Mission',
-        textParagraph: 'Il nostro impegno ambientale è primario. Offriamo una vasta selezione di pallet usati, standard (da 600x600 a 1200x1200), con differenti livelli di resistenza. Ripariamo e rigeneriamo i pallet usati per ridurre gli sprechi di legname e assicurare la tracciabilità dei materiali.',
+        textParagraph: 'Ci impegniamo nella sostenibilità, ripariamo e rigeneriamo bancali usati standard di varie dimensioni. Riduciamo gli sprechi di legname, garantendo tracciabilità e offrendo soluzioni sostenibili per una gestione responsabile dei pallet.',
         callToAction: 'Lavora Con Noi',
         action: () => this.router.navigate(['/lavora-con-noi'])
       },
