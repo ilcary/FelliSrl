@@ -1,19 +1,30 @@
-.card{
-  border-radius: 0.6rem;
-  max-width: 1200px;
-  .card-img-top{
-    border-radius: 0.6rem 0 0 0.6rem;
-    @media (max-width: 768px) {
-      border-radius: 0.6rem 0.6rem 0 0;
+
+.card-container {
+  max-width: 1440px;
+  background-color: #f1f1f1f1;
+
+  .card-img-top {
+    border-radius: 0.2rem;
+    @media (min-width: 768px) {
+      height: 400px !important;
+      width: auto;
     }
   }
-}
-.card-body {
-  border-radius: 0 0.6rem 0.6rem 0;
-  @media (max-width: 768px) {
-  border-radius: 0 0 0.6rem 0.6rem;
-  }
-  color: white;
-  line-height: 24px;
 
+  .card-info {
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      @media (min-width: 768px) {
+        &.reverse {
+          margin-left: auto;
+        }
+        width: 66.66666667%;
+      }
+    }
+  }
 }

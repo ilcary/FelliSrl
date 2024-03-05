@@ -1,0 +1,150 @@
+<section class="homepage-landing-section">
+  <app-page-generic-header [pageModel]="pageModel" ></app-page-generic-header>
+</section>
+
+<section class="company-intro d-flex flex-column align-items-center px-3 my-5">
+  <div class="d-flex flex-column text-center">
+    <p class="fs-3 fw-bold">
+      Showroom dei nostri prodotti
+    </p>
+    <p class="fs-5">
+      Esplora la nostra galleria per scoprire una vasta gamma di pallet e imballaggi su misura, progettati per
+      soddisfare ogni tua esigenza. Offriamo soluzioni affidabili e efficienti per qualsiasi tua esigenza.
+    </p>
+  </div>
+</section>
+
+<section class="products-carousel py-3">
+  <div class="">
+    <div class="container">
+      <div class="row gy-2">
+        <div class="d-flex flex-row gap-3 py-2 justify-content-center">
+          <button class="btn btn-outline-felli-red d-flex align-items-center justify-content-center" title="indietro"
+                  type="button" data-bs-target="#carouselProducts" data-bs-slide="prev">
+            <mat-icon class="fs-2 w-100 h-100 d-flex align-items-center justify-content-center" arzia-hidden="false"
+                      aria-label="Icona freccia a sinistra per carousel"
+                      fontIcon="chevron_left"></mat-icon>
+          </button>
+          <button class="btn btn-outline-felli-red d-flex align-items-center justify-content-center" title="avanti"
+                  type="button" data-bs-target="#carouselProducts" data-bs-slide="next">
+            <mat-icon class="fs-2 w-100 h-100" arzia-hidden="false" aria-label="Icona freccia a destra per carousel"
+                      fontIcon="chevron_right"></mat-icon>
+          </button>
+        </div>
+        <div class="col-12">
+          <div id="carouselProducts" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+              <ng-container *ngFor="let cardRow of galleryCardSorted; first as isFirst">
+                <div class="carousel-item" [ngClass]="isFirst ? 'active' :''">
+                  <div class="row">
+                    <ng-container *ngFor="let card of cardRow">
+                      <div class="col-md-4 mb-3">
+                        <app-product-card [galleryCard]="card"></app-product-card>
+                      </div>
+                    </ng-container>
+                  </div>
+                </div>
+              </ng-container>
+
+              <!--    <div class="carousel-item">
+                    <div class="row">
+
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="../../../../assets/images/gallery/4.jpg">
+                          <div class="card-body">
+                            <h4 class="card-title fs-5 fw-medium">Special title treatment</h4>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="../../../../assets/images/gallery/5.jpg">
+                          <div class="card-body">
+                            <h4 class="card-title fs-5 fw-medium">Special title treatment</h4>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="../../../../assets/images/gallery/6.jpg">
+                          <div class="card-body">
+                            <h4 class="card-title fs-5 fw-medium">Special title treatment</h4>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="../../../../assets/images/gallery/7.jpg">
+                          <div class="card-body">
+                            <h4 class="card-title fs-5 fw-medium">Special title treatment</h4>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="../../../../assets/images/gallery/8.jpg">
+                          <div class="card-body">
+                            <h4 class="card-title fs-5 fw-medium">Special title treatment</h4>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="../../../../assets/images/gallery/9.jpg">
+                          <div class="card-body">
+                            <h4 class="card-title fs-5 fw-medium">Special title treatment</h4>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="carousel-section my-5">
+  <div class="d-flex align-items-center justify-content-center">
+    <div class="gallery-container">
+      <gallery id="mixed" class="mx-3"
+               *ngIf="media$ | async; let config"
+               thumbs
+               [thumbWidth]="config.thumbWidth ?? 80"
+               [thumbHeight]="config.thumbHeight ?? 80"
+               [loadingAttr]="'lazy'" [loadingStrategy]="'preload'" [imageSize]="'cover'"
+      >
+        <ng-container *galleryImageDef="let item; active as active">
+      <span *ngIf="active && item?.alt" @slideAnimation class="item-text">
+        {{ item?.alt }}
+      </span>
+        </ng-container>
+      </gallery>
+    </div>
+    <div></div>
+  </div>
+</section>
