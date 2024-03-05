@@ -12,6 +12,10 @@
   }
 
   .card-info {
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+
     p {
       font-size: 1.5rem;
       line-height: 1.5rem;

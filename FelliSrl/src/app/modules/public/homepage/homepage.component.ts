@@ -1,11 +1,11 @@
 import {Component, inject} from '@angular/core';
 import {ScreenBreakpointService} from "../../../core/services/screen-breakpoint.service";
-import {CardContent} from "../../shared/components/card/card.component";
 import {AnimatedCardContent} from "../../shared/components/animated-card/animated-card.component";
 import {tap} from "rxjs";
 import {takeUntilDestroyed} from "@angular/core/rxjs-interop";
 import {Router} from "@angular/router";
 import {PageGenericHeaderModel} from "../../shared/components/page-generic-header/page-generic-header.component";
+import {CardContent} from "../../../core/models/generic.models";
 
 @Component({
   selector: 'app-homepage',
@@ -64,27 +64,31 @@ export class HomepageComponent {
     [
       {
         background: 'blue',
-        highlightedText: 'testo in evidenza',
-        headingParagraph: 'Certificazione bellissima, i giaguari iso042358',
-        textParagraph: 'I piu suavesiti della savana'
+        highlightedText: 'CONLEGNO',
+        headingParagraph: 'CONLEGNO',
+        textParagraph: 'Scopri di più su',
+        logoSrc: '../../../../assets/images/homapage/certificates/logo_conlegno.png'
       },
       {
         background: 'red',
-        highlightedText: 'testo in evidenza',
-        headingParagraph: 'Certificazione bellissima, i giaguari iso042358',
-        textParagraph: 'I piu suavesiti della savana'
+        highlightedText: 'FITOK',
+        headingParagraph: 'FITOK',
+        textParagraph: 'Scopri di più su',
+        logoSrc: '../../../../assets/images/homapage/certificates/logo_fitok.png'
       },
       {
         background: 'blue',
-        highlightedText: 'testo in evidenza',
-        headingParagraph: 'Certificazione bellissima, i giaguari iso042358',
-        textParagraph: 'I piu suavesiti della savana'
+        highlightedText: 'CONFINDUSTRIA',
+        headingParagraph: 'CONFINDUSTRIA',
+        textParagraph: 'Scopri di più su',
+        logoSrc: '../../../../assets/images/homapage/certificates/logo_confindustria.png'
       },
       {
         background: 'red',
-        highlightedText: 'testo in evidenza',
-        headingParagraph: 'Certificazione bellissima, i giaguari iso042358',
-        textParagraph: 'I piu suavesiti della savana'
+        highlightedText: 'CONAI',
+        headingParagraph: 'CONAI',
+        textParagraph: 'Scopri di più su',
+        logoSrc: '../../../../assets/images/homapage/certificates/logo_conai.png'
       },
     ]
 

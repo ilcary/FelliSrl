@@ -1,12 +1,6 @@
 import {Component, Input} from '@angular/core';
+import {CardContent} from "../../../../core/models/generic.models";
 
-export interface CardContent {
-  imagePath: string;
-  headingParagraph: string;
-  textParagraph: string;
-  callToAction?: string;
-  action: () => void;
-}
 
 @Component({
   selector: 'app-card',

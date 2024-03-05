@@ -4,6 +4,8 @@ import { CardComponent } from './card/card.component';
 import { AnimatedCardComponent } from './animated-card/animated-card.component';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { PageGenericHeaderComponent } from './page-generic-header/page-generic-header.component';
+import { InfoCardComponent } from './info-card/info-card.component';
+import {MatIconModule} from "@angular/material/icon";
 
 
 
@@ -12,16 +14,19 @@ import { PageGenericHeaderComponent } from './page-generic-header/page-generic-h
     CardComponent,
     AnimatedCardComponent,
     ProductCardComponent,
-    PageGenericHeaderComponent
+    PageGenericHeaderComponent,
+    InfoCardComponent
   ],
-    exports: [
-        CardComponent,
-        AnimatedCardComponent,
-        ProductCardComponent,
-        PageGenericHeaderComponent
-    ],
-  imports: [
-    CommonModule
-  ]
+  exports: [
+    CardComponent,
+    AnimatedCardComponent,
+    ProductCardComponent,
+    PageGenericHeaderComponent,
+    InfoCardComponent
+  ],
+    imports: [
+        CommonModule,
+        MatIconModule
+    ]
 })
 export class ComponentsModule { }
