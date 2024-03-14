@@ -1,1 +1,85 @@
-<p>about-us works!</p>
+<div class="smooth-appear">
+
+  <section class="card-info-about-us my-4 mx-4">
+
+    <div class="row card-container">
+      <div class="col-12 col-xl-4 about-us-section mobile-about-us">
+        <ng-container *ngTemplateOutlet="aboutUsInfo; context:{mobile:true}"></ng-container>
+      </div>
+      <div class="col-12 col-xl-8">
+        <div class="d-flex w-100 flex-lg-row flex-column gap-3">
+
+          <div class="w-100 card-info d-flex flex-column">
+            <div class="card-image object-fit-contain">
+              <img id="" class=""
+                   alt="Business indoor preview"
+                   src="./assets/images/aboutUs/quality-card.jpg">
+            </div>
+            <div class="card-description text-white h-xl-25 h-100 p-3">
+              <h2 class="fw-bold text-center mt-4"> QUALITÀ </h2>
+              <p class="text-center fs-5 mt-2"> nelle risorse materiali e umane a disposizione del cliente.</p>
+            </div>
+          </div>
+
+          <div class="w-100 card-info d-flex flex-column">
+            <div class="card-image object-fit-contain">
+              <img id="" class=""
+                   alt="Business indoor preview"
+                   src="./assets/images/aboutUs/pro-card.jpg">
+            </div>
+            <div class="card-description text-white h-xl-25 h-100 p-3">
+              <h2 class="fw-bold text-center mt-4"> ABILITÀ </h2>
+              <p class="text-center fs-5 mt-2"> nella creazione di prodotti secondo le vostre esigenze. </p>
+            </div>
+          </div>
+
+          <div class="w-100 card-info d-flex flex-column">
+            <div class="card-image object-fit-contain">
+              <img id="" class=""
+                   alt="Business indoor preview"
+                   src="./assets/images/aboutUs/respect-card.jpg">
+            </div>
+            <div class="card-description text-white h-xl-25 h-100 p-3">
+              <h2 class="fw-bold text-center mt-4"> RISPETTO </h2>
+              <p class="text-center fs-5 mt-2"> dell'ambiente grazie all'approccio eco-friendly nei nostri
+                impianti. </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-12 col-xl-4 about-us-section desktop-about-us">
+        <ng-container *ngTemplateOutlet="aboutUsInfo"></ng-container>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="yt-player my-5">
+
+    <div class="d-flex justify-content-center py-5">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/bTJcD5rUdZo?si=Z5viZ7xNTP4bW06U"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+    </div>
+
+  </section>
+
+</div>
+<ng-template #aboutUsInfo let-mobile="mobile">
+  <div class="text-container d-flex flex-column justify-content-center h-100"
+       [ngClass]="{'px-1':mobile,'px-4':!mobile}">
+    <div class="text-center">
+      <h1 class="fw-bolder" [ngClass]="{'mb-2':mobile,'mb-4':!mobile}">CHI SIAMO?</h1>
+      <p class="fw-medium fs-5 about-us-paragraph">La Felli S.r.l. è un'industria a conduzione familiare operante nel
+        settore degli imballaggi terziari e delle trasformazioni in legno nata nel 2018 e con sede legale a Cerchio (AQ)
+        e 3 sedi operative a Cerchio, Celano e Avezzano distribuite su un'area totale di 10.000 mq. Grazie a
+        un'esperienza pregressa di 20 anni nel settore degli imballaggi, la Felli S.r.l. ha come ambizione diventare una
+        grande realtà del settore nel centro Italia e sfruttare appieno le potenzialità dell’economia circolare degli
+        imballaggi in legno. Offriamo servizi a 360 gradi per la produzione di imballaggi in legno standard e fuori
+        misura, gestione, selezione e riparazione di pallet usati. Il tutto con l’obiettivo finale di soddisfare appieno
+        le esigenze di ogni cliente.</p>
+    </div>
+  </div>
+</ng-template>

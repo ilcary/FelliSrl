@@ -1,16 +1,23 @@
 @import "/src/assets/scss/variables.scss";
 
 .felli-animated-card_item {
+  flex: 50% !important;
+
   -ms-flex-preferred-size: calc(33.33333% - 30px);
   flex-basis: calc(33.33333% - 30px);
   overflow: hidden;
   border-radius: 28px;
+  width: 350px;
 }
 
 .felli-animated-card-item_link {
   display: block;
   padding: 30px 20px;
   background-color: #121212;
+  height: 300px;
+  @media (max-width: 767px) {
+  height: 250px;
+  }
 
   overflow: hidden;
 
@@ -30,9 +37,6 @@
 }
 
 .felli-animated-card-item_title {
-  min-height: 87px;
-  margin: 0 0 25px;
-
   overflow: hidden;
 
   font-weight: bold;
@@ -48,6 +52,17 @@
   font-size: 18px;
   color: #FFF;
 
+  z-index: 2;
+  position: relative;
+}
+.felli-animated-card-item_logo {
+  img{
+  max-height: 160px;
+    max-width: 100%;
+    @media (max-width: 767px) {
+      max-height: 120px;
+    }
+  }
   z-index: 2;
   position: relative;
 }
@@ -102,7 +117,7 @@
 
 }
 
-@media only screen and (max-width: 639px) {
+/*@media only screen and (max-width: 639px) {
   .felli-animated-card_item {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -119,4 +134,4 @@
   .felli-animated-card-item_date-box {
     font-size: 16px;
   }
-}
+}*/

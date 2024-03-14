@@ -1,1 +1,128 @@
-<p>contacts works!</p>
+<section class="homepage-landing-section">
+  <app-page-generic-header [pageModel]="pageModel"></app-page-generic-header>
+</section>
+
+<section>
+  <div class="container mt-xl-5">
+    <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
+      <div class="custom-icon w-100 d-flex justify-content-center pb-4">
+        <img class="img-fluid"
+             src="./assets/images/contacts/timetables.png"
+             alt="Avatar"/>
+      </div>
+      <h1 class="text-body-emphasis fs-1 fw-medium fst-italic">ORARIO LAVORATIVO</h1>
+      <p class="timetables col-lg-6 fs-3 mx-auto">
+        <span class="text-nowrap"> Lunedì - Venerdì </span>
+        <br>
+        <span class="text-nowrap"> 8:00-13:00 - 14:00-17:00 </span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="contacts-card">
+  <div class="d-flex flex-column flex-lg-row pt-xl-5 gap-5 mx-3  mx-lg-0 justify-content-center">
+    <!--Card Amministrazione-->
+    <div class="card card-custom border-white border-0">
+      <div class="card-custom-img"
+           style="background-image: url(./assets/images/contacts/amministrazione-bg.jpg);"></div>
+      <div class="card-custom-avatar">
+        <img class="img-fluid"
+             src="./assets/images/contacts/amministrazione.png"
+             alt="Avatar"/>
+      </div>
+      <div class="card-body" style="overflow-y: auto">
+        <h4 class="card-title fs-4 fw-medium">Amministrazione</h4>
+        <p class="card-text fs-5">A vostra disposizione per ogni eventualità.
+        </p>
+      </div>
+      <div class="card-footer d-flex flex-column gap-3 mb-2" style="background: inherit; border-color: inherit;">
+        <div class="d-flex align-items-center gap-3">
+          <div
+            class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 p-2 py-1">
+            <mat-icon class="fs-2 h-100 d-flex align-items-center justify-content-center" arzia-hidden="false"
+                      aria-label="Icona handshake"
+                      fontIcon="phone"></mat-icon>
+          </div>
+          <p class="fs-5 m-0">
+            <a href="tel:086378227">0863 78227</a>
+          </p>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <div
+            class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 p-2 py-1">
+            <mat-icon class="fs-2 h-100 d-flex align-items-center justify-content-center" arzia-hidden="false"
+                      aria-label="Icona handshake"
+                      fontIcon="mail"></mat-icon>
+          </div>
+          <p class="fs-5 m-0">
+            <a
+              href="mailto:amministrazione@fellisrl.com">amministrazione@fellisrl.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Card Commerciale-->
+    <div class="card card-custom border-white border-0">
+      <div class="card-custom-img"
+           style="background-image: url(./assets/images/contacts/commerciale-bg.jpg);"></div>
+      <div class="card-custom-avatar">
+        <img class="img-fluid"
+             src="./assets/images/contacts/commerciale.png"
+             alt="Avatar"/>
+      </div>
+      <div class="card-body" style="overflow-y: auto">
+        <h4 class="card-title fs-4 fw-medium">Commerciale</h4>
+        <p class="card-text fs-5">Richiedi un preventivo.
+        </p>
+      </div>
+      <div class="card-footer d-flex flex-column gap-3 mb-2" style="background: inherit; border-color: inherit;">
+        <div class="d-flex align-items-center gap-3">
+          <div
+            class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 p-2 py-1">
+            <mat-icon class="fs-2 h-100 d-flex align-items-center justify-content-center" arzia-hidden="false"
+                      aria-label="Icona handshake"
+                      fontIcon="phone"></mat-icon>
+          </div>
+          <p class="fs-5 m-0">
+            <a href="tel:3382477666">338 2477666</a>
+          </p>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <div
+            class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 p-2 py-1">
+            <mat-icon class="fs-2 h-100 d-flex align-items-center justify-content-center" arzia-hidden="false"
+                      aria-label="Icona handshake"
+                      fontIcon="mail"></mat-icon>
+          </div>
+          <p class="fs-5 m-0">
+            <a
+              href="mailto:antoniofelli09@gmail.com">antoniofelli09@gmail.com</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container my-xl-5">
+    <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
+      <div class="custom-icon w-100 d-flex justify-content-center pb-4">
+        <img class="img-fluid"
+             src="./assets/images/contacts/maps-icon.png"
+             alt="Avatar"/>
+      </div>
+      <h1 class="text-body-emphasis fs-1 fw-medium fst-italic">DOVE TROVARCI</h1>
+      <p class="col-lg-6 fs-5 mx-auto mb-4">
+        Via Valeria Tiburtina Km 130.500, 67044 Cerchio AQ
+      </p>
+      <a class="btn btn-primary px-5" type="button" target="_blank"
+         href="https://maps.google.com/maps?ll=42.055994,13.597081&amp;z=15&amp;t=m&amp;hl=it&amp;gl=IT&amp;mapclient=embed&amp;cid=10053530082024829106">
+        Prosegui su Maps
+      </a>
+    </div>
+  </div>
+</section>

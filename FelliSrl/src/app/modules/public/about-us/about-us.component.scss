@@ -1,0 +1,83 @@
+@import "/src/assets/scss/variables.scss";
+
+.card-info-about-us {
+
+}
+@media (max-width: 1200px) {
+  .desktop-about-us{
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  .mobile-about-us{
+    display: none !important;
+  }
+}
+
+.card-container {
+
+  .card-info:nth-child(1) {
+    .card-description {
+      background: $felli-dark-red;
+      background-color: $felli-red-gradient;
+    }
+  }
+
+  .card-info:nth-child(2) {
+    .card-description {
+      background: $prussian-blue;
+      background-color: $felli-blue-gradient;
+    }
+  }
+
+  .card-info:nth-child(3) {
+    .card-description {
+      background: rgb(44, 130, 0);
+      background: -moz-linear-gradient(38deg, rgba(44, 130, 0, 1) 0%, rgba(3, 139, 0, 1) 90%);
+      background: -webkit-linear-gradient(38deg, rgba(44, 130, 0, 1) 0%, rgba(3, 139, 0, 1) 90%);
+      background: linear-gradient(38deg, rgba(44, 130, 0, 1) 0%, rgba(3, 139, 0, 1) 90%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2c8200", endColorstr="#038b00", GradientType=1);
+    }
+  }
+
+  .card-description {
+    h2 {
+      font-size: 2.6rem;
+    }
+  }
+
+  .card-image {
+    img {
+      height: 500px;
+      width: 100%;
+      object-fit: cover;
+      @media (max-width: 1200px) {
+        height: 300px;
+      }
+    }
+  }
+}
+
+.about-us-section {
+  h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+    @media (max-width: 600px) {
+      font-size: 3rem;
+    }
+  }
+
+  .about-us-paragraph {
+    line-height: 1.8rem;
+  }
+}
+
+/*Products carousel*/
+.yt-player{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-image: url('/assets/images/aboutUs/about-us-bg.jpg');
+}
+
