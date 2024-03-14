@@ -1,16 +1,19 @@
 <div class="felli-animated-card_item">
-      <a [href]="animatedCardContent.action" class="felli-animated-card-item_link">
-        <div class="felli-animated-card-item_bg" [ngClass]="animatedCardContent.background"></div>
-
-        <div class="felli-animated-card-item_title">
-          {{animatedCardContent.headingParagraph}}
-        </div>
-
-        <div class="felli-animated-card-item_date-box">
-          {{animatedCardContent.textParagraph}}
-          <span class="felli-animated-card-item_date">
+  <a [href]="animatedCardContent.linkReference" target="_blank" class="felli-animated-card-item_link">
+    <div class="d-flex flex-column justify-content-between h-100">
+      <div class="felli-animated-card-item_bg" [ngClass]="animatedCardContent.background"></div>
+      <div class="felli-animated-card-item_title">
+        {{animatedCardContent.headingParagraph}}
+      </div>
+      <div class="felli-animated-card-item_logo align-self-center">
+        <img [alt]="animatedCardContent.headingParagraph" [src]="animatedCardContent.logoSrc">
+      </div>
+      <div class="felli-animated-card-item_date-box">
+        {{animatedCardContent.textParagraph}}
+        <span class="felli-animated-card-item_date">
           {{animatedCardContent.highlightedText}}
           </span>
-        </div>
-      </a>
+      </div>
     </div>
+  </a>
+</div>

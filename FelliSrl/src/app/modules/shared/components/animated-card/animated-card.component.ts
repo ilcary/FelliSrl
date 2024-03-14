@@ -1,12 +1,12 @@
 import {Component, Input} from '@angular/core';
-import {CardContent} from "../card/card.component";
 
 export interface AnimatedCardContent{
   background: 'blue' | 'red';
   highlightedText: string;
-  action?: ()=>void;
+  linkReference: string;
   headingParagraph:string;
   textParagraph:string;
+  logoSrc?:string;
 }
 
 @Component({

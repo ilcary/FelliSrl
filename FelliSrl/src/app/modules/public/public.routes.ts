@@ -1,6 +1,6 @@
 import {Routes} from "@angular/router";
 import {HomepageComponent} from "./homepage/homepage.component";
-import {GalleryComponent} from "./gallery/gallery.component";
+import {GalleryPageComponent} from "./gallery/gallery-page.component";
 import {AboutUsComponent} from "./about-us/about-us.component";
 import {WorkWithUsComponent} from "./work-with-us/work-with-us.component";
 import {ContactsComponent} from "./contacts/contacts.component";
@@ -12,7 +12,7 @@ export const PublicModuleRoutes: Routes = [
   },
   {
     path: 'gallery',
-    component: GalleryComponent,
+    component: GalleryPageComponent,
   },
   {
     path: 'chi-siamo',

@@ -1,0 +1,33 @@
+<div class="d-flex justify-content-center" ><!--fixme [ngClass]="{'w-50': isDesktop$ | async}"-->
+  <div class="card card-custom border-white border-0">
+    <div class="card-custom-img"
+         [style]="'background-image: url('+cardContent.imagePath+');'"></div>
+    <div class="card-custom-avatar">
+      <img class="img-fluid"
+           [src]="cardContent.avatarImgPath"
+           alt="Avatar"/>
+    </div>
+    <div class="card-body" style="overflow-y: auto">
+      <h4 class="card-title fs-4 fw-medium">{{cardContent.headingParagraph}}</h4>
+      <p class="card-text fs-5">{{cardContent.textParagraph}}
+      </p>
+    </div>
+    <!--Actions-->
+    <div class="card-footer d-flex flex-column gap-3 mb-2" style="background: inherit; border-color: inherit;">
+      <ng-container *ngFor="let action of cardContent.cardActions">
+        <div class="d-flex align-items-center gap-3">
+          <div
+            class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 p-2 py-1">
+            <mat-icon class="fs-2 h-100 d-flex align-items-center justify-content-center" arzia-hidden="false"
+                      aria-label="Icona handshake"
+                      [fontIcon]="action.symbol"></mat-icon>
+          </div>
+          <p class="fs-5 m-0 cursor">
+            <a (click)="action.action()" [matTooltip]="'Contattaci!'">{{action.textValue}}</a>
+          </p>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>
+

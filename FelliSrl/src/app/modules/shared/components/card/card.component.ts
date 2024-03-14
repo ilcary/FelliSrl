@@ -1,12 +1,6 @@
 import {Component, Input} from '@angular/core';
+import {CardContent} from "../../../../core/models/generic.models";
 
-export interface CardContent{
-  imagePath:string;
-  headingParagraph:string;
-  textParagraph:string;
-  callToAction?:string;
-  action?: ()=>void;
-}
 
 @Component({
   selector: 'app-card',
@@ -14,6 +8,7 @@ export interface CardContent{
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent {
-  @Input()cardContent:CardContent;
+  @Input() cardContent: CardContent;
+  @Input() reverse: boolean = true;
 
 }
