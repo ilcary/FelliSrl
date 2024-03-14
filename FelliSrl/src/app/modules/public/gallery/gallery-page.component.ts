@@ -1,6 +1,6 @@
 import {Component, inject, OnInit} from '@angular/core';
 import {slideInAnimation} from "./slide-text.animation";
-import {Gallery, GalleryConfig, GalleryItemData, GalleryItemTypes, ImageItemData} from 'ng-gallery';
+import {Gallery, GalleryConfig, ImageItemData} from 'ng-gallery';
 import {map, Observable} from "rxjs";
 import {ScreenBreakpointService} from "../../../core/services/screen-breakpoint.service";
 import {GalleryCard} from "../../shared/components/product-card/product-card.component";

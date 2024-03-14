@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {PageGenericHeaderModel} from "../../shared/components/page-generic-header/page-generic-header.component";
 
 @Component({

@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { GalleryPageComponent } from './gallery-page.component';
+import {GalleryPageComponent} from './gallery-page.component';
 
 describe('GalleryComponent', () => {
   let component: GalleryPageComponent;
