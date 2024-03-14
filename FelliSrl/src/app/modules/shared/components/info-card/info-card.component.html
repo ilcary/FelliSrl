@@ -22,8 +22,8 @@
                       aria-label="Icona handshake"
                       [fontIcon]="action.symbol"></mat-icon>
           </div>
-          <p class="fs-5 m-0">
-            <a (click)="action.action()">{{action.textValue}}</a>
+          <p class="fs-5 m-0 cursor">
+            <a (click)="action.action()" [matTooltip]="'Contattaci!'">{{action.textValue}}</a>
           </p>
         </div>
       </ng-container>

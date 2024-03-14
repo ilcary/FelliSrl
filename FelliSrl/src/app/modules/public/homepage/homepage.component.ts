@@ -67,6 +67,7 @@ export class HomepageComponent {
         highlightedText: 'CONLEGNO',
         headingParagraph: 'CONLEGNO',
         textParagraph: 'Scopri di più su',
+        linkReference: 'https://www.conlegno.eu/',
         logoSrc: '../../../../assets/images/homapage/certificates/logo_conlegno.png'
       },
       {
@@ -74,6 +75,7 @@ export class HomepageComponent {
         highlightedText: 'FITOK',
         headingParagraph: 'FITOK',
         textParagraph: 'Scopri di più su',
+        linkReference: 'https://fitok.conlegno.eu/',
         logoSrc: '../../../../assets/images/homapage/certificates/logo_fitok.png'
       },
       {
@@ -81,6 +83,7 @@ export class HomepageComponent {
         highlightedText: 'CONFINDUSTRIA',
         headingParagraph: 'CONFINDUSTRIA',
         textParagraph: 'Scopri di più su',
+        linkReference:'https://www.confindustria.aq.it/',
         logoSrc: '../../../../assets/images/homapage/certificates/logo_confindustria.png'
       },
       {
@@ -88,6 +91,7 @@ export class HomepageComponent {
         highlightedText: 'CONAI',
         headingParagraph: 'CONAI',
         textParagraph: 'Scopri di più su',
+        linkReference: 'https://www.conai.org/',
         logoSrc: '../../../../assets/images/homapage/certificates/logo_conai.png'
       },
     ]

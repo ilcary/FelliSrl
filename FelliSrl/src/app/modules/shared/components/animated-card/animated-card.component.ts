@@ -3,7 +3,7 @@ import {Component, Input} from '@angular/core';
 export interface AnimatedCardContent{
   background: 'blue' | 'red';
   highlightedText: string;
-  action?: ()=>void;
+  linkReference: string;
   headingParagraph:string;
   textParagraph:string;
   logoSrc?:string;

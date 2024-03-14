@@ -6,6 +6,7 @@ import { ProductCardComponent } from './product-card/product-card.component';
 import { PageGenericHeaderComponent } from './page-generic-header/page-generic-header.component';
 import { InfoCardComponent } from './info-card/info-card.component';
 import {MatIconModule} from "@angular/material/icon";
+import {MatTooltipModule} from "@angular/material/tooltip";
 
 
 
@@ -26,7 +27,8 @@ import {MatIconModule} from "@angular/material/icon";
   ],
     imports: [
         CommonModule,
-        MatIconModule
+        MatIconModule,
+        MatTooltipModule
     ]
 })
 export class ComponentsModule { }

@@ -25,9 +25,11 @@ export class WorkWithUsComponent {
       textParagraph: 'Stiamo cercando un Operatore di Carrelli Elevatori esperto per unirsi al nostro team. Responsabilità principali: movimentazione sicura delle merci, carico/scarico materiali. Se sei qualificato e motivato, invia il tuo CV ora!',
       cardActions: [{
         textValue: '0863 78227', symbol: 'phone', action: () => {
+          window.open('tel:086378227')
         }
       }, {
         textValue: 'amministrazione@fellisrl.com', symbol: 'mail', action: () => {
+          window.open('mailto:amministrazione@fellisrl.com')
         }
       }],
       action: () => {
