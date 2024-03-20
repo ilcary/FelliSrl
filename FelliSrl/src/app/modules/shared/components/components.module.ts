@@ -6,8 +6,8 @@ import {ProductCardComponent} from './product-card/product-card.component';
 import {PageGenericHeaderComponent} from './page-generic-header/page-generic-header.component';
 import {InfoCardComponent} from './info-card/info-card.component';
 import {MatIconModule} from "@angular/material/icon";
-import { ProgressiveImageComponent } from './progresive-image/./progressive-image.component';
 import {MatTooltipModule} from "@angular/material/tooltip";
+import { ProgressiveImgComponent } from './progressive-img/progressive-img.component';
 
 
 @NgModule({
@@ -17,19 +17,21 @@ import {MatTooltipModule} from "@angular/material/tooltip";
     ProductCardComponent,
     PageGenericHeaderComponent,
     InfoCardComponent,
-    ProgressiveImageComponent
+    ProgressiveImgComponent,
   ],
   exports: [
     CardComponent,
     AnimatedCardComponent,
     ProductCardComponent,
     PageGenericHeaderComponent,
-    InfoCardComponent
+    InfoCardComponent,
+    ProgressiveImgComponent,
   ],
-    imports: [
-        CommonModule,
-        MatIconModule,
-        MatTooltipModule
-    ]
+  imports: [
+    CommonModule,
+    MatIconModule,
+    MatTooltipModule
+  ]
 })
-export class ComponentsModule { }
+export class ComponentsModule {
+}
