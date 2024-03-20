@@ -1,0 +1,12 @@
+<div
+  [ngStyle]="{ 'background-image': 'url(' + imageUrlSmall + ')' }"
+  [ngClass]="{ placeholder: true, 'placeholder-loaded': isLoaded }"
+>
+  <img
+    [src]="imageUrl"
+    [alt]="imageAlt"
+    [ngClass]="{ image: true, 'image-loaded': isLoaded }"
+    loading="lazy"
+    (load)="onImageLoad()"
+  />
+</div>
