@@ -12,6 +12,7 @@ import {CardInfoContent} from "../../../core/models/generic.models";
 export class WorkWithUsComponent {
   protected pageModel: PageGenericHeaderModel = {
     imgSrc: './assets/images/workWithUs/workWithUs-bg.jpg',
+    imgSrcSmall: './assets/images/workWithUs/workWithUs-bg_small.jpg',
     imgAlt: 'Image indoor preview as background',
     title: 'LAVORA CON NOI'
   };

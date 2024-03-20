@@ -14,7 +14,8 @@ import {PageGenericHeaderModel} from "../../shared/components/page-generic-heade
 })
 export class GalleryPageComponent implements OnInit {
   protected pageModel: PageGenericHeaderModel = {
-    imgSrc: './assets/images/gallery/gallery-bg.jpg',
+    imgSrc: './assets/images/gallery/gallery-bg.png',
+    imgSrcSmall: './assets/images/gallery/gallery-bg_small.png',
     imgAlt: 'Image indoor preview as background',
     title: 'I NOSTRI PRODOTTI'
   };
@@ -113,15 +114,6 @@ export class GalleryPageComponent implements OnInit {
         src: `../../../../assets/images/gallery/slider/${i}.jpg`,
         thumb: `../../../../assets/images/gallery/slider/${i}.jpg`,
       } as ImageItemData,)
-      /*      if (i < 15) {
-              this.galleryCards.push({
-                img: `../../../../assets/images/gallery/prodotti/${i}.jpg`,
-                title: "",
-                description: "",
-                callback: () => {
-                }
-              })
-            }*/
     }
   }
 }

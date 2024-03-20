@@ -18,8 +18,9 @@ export class HomepageComponent {
   protected isMobile: boolean = false;
   protected pageModel: PageGenericHeaderModel = {
     imgSrc: './assets/images/homapage/homepage-main-section.jpg',
+    imgSrcSmall: './assets/images/homapage/homepage-main-section_small.jpg',
     imgAlt: 'Image indoor preview as background',
-    title: this.isMobile ? 'IMBALLAGGI FUORI MISURA A MISURA PER TE' : 'IMBALLAGGI FUORI MISURA <br> A MISURA PER TE'
+    title: this.isMobile ? 'IMBALLAGGI FUORI MISURA A MISURA PER TE' : 'IMBALLAGGI FUORI MISURA <br> A MISURA PER VOI'
   };
   protected logoDimensions: { width: string, height: string } = {width: '250', height: '250'};
 
@@ -28,9 +29,8 @@ export class HomepageComponent {
       this.logoDimensions = {width: isMobile ? '100' : '250', height: isMobile ? '100' : '250'}
       this.isMobile = isMobile
       this.pageModel = {
-        imgSrc: './assets/images/homapage/homepage-main-section.jpg',
-        imgAlt: 'Image indoor preview as background',
-        title: this.isMobile ? 'IMBALLAGGI FUORI MISURA A MISURA PER TE' : 'IMBALLAGGI FUORI MISURA <br> A MISURA PER TE'
+        ...this.pageModel,
+        title: this.isMobile ? 'IMBALLAGGI FUORI MISURA A MISURA PER TE' : 'IMBALLAGGI FUORI MISURA <br> A MISURA PER VOI'
       };
 
     })).subscribe()
