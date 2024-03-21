@@ -1,5 +1,6 @@
 export interface CardContent {
   imagePath: string;
+  imagePathSmall: string;
   headingParagraph: string;
   textParagraph: string;
   callToAction?: string;

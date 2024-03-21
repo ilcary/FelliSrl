@@ -21,6 +21,7 @@ export class WorkWithUsComponent {
   protected cardApplications: CardInfoContent[] = [
     {
       imagePath: './assets/images/workWithUs/forkLiftApplicationBg.jpg',
+      imagePathSmall: './assets/images/workWithUs/forkLiftApplicationBg.jpg',
       avatarImgPath: './assets/images/workWithUs/forkLiftAvatar.png',
       headingParagraph: 'Operatore di Carrelli Elevatori',
       textParagraph: 'Stiamo cercando un Operatore di Carrelli Elevatori esperto per unirsi al nostro team. Responsabilità principali: movimentazione sicura delle merci, carico/scarico materiali. Se sei qualificato e motivato, invia il tuo CV ora!',

@@ -1,18 +1,20 @@
 import {Component, Input} from '@angular/core';
+import {CommonModule} from "@angular/common";
 
 @Component({
   selector: 'app-progressive-img',
   templateUrl: './progressive-img.component.html',
-  styleUrls: ['./progressive-img.component.scss']
+  styleUrls: ['./progressive-img.component.scss'],
 })
 export class ProgressiveImgComponent {
-  @Input({ required: true }) imageUrl!: string;
-  @Input({ required: true }) imageUrlSmall!: string;
-  @Input({ required: true }) imageAlt!: string;
+  @Input() imageUrl: string;
+  @Input() imageUrlSmall: string;
+  @Input() imageAlt: string;
 
   isLoaded = false;
 
   onImageLoad() {
+    console.log(this.imageUrl)
     this.isLoaded = true;
   }
 }
