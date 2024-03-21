@@ -30,7 +30,7 @@ export class HomepageComponent {
       this.isMobile = isMobile
       this.pageModel = {
         ...this.pageModel,
-        title: this.isMobile ? 'IMBALLAGGI FUORI MISURA A MISURA PER TE' : 'IMBALLAGGI FUORI MISURA <br> A MISURA PER VOI'
+        title: this.isMobile ? 'IMBALLAGGI FUORI MISURA A MISURA PER VOI' : 'IMBALLAGGI FUORI MISURA <br> A MISURA PER VOI'
       };
 
     })).subscribe()
