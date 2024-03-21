@@ -20,7 +20,7 @@ export class HomepageComponent {
     imgSrc: './assets/images/homepage/homepage-main-section.jpg',
     imgSrcSmall: './assets/images/homepage/homepage-main-section_small.jpg',
     imgAlt: 'Image indoor preview as background',
-    title: this.isMobile ? 'IMBALLAGGI FUORI MISURA A MISURA PER TE' : 'IMBALLAGGI FUORI MISURA <br> A MISURA PER VOI'
+    title: this.isMobile ? 'IMBALLAGGI FUORI MISURA A MISURA PER VOI' : 'IMBALLAGGI FUORI MISURA <br> A MISURA PER VOI'
   };
   protected logoDimensions: { width: string, height: string } = {width: '250', height: '250'};
 
