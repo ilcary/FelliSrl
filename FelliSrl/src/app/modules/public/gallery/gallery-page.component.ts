@@ -14,7 +14,7 @@ import {PageGenericHeaderModel} from "../../shared/components/page-generic-heade
 })
 export class GalleryPageComponent implements OnInit {
   protected pageModel: PageGenericHeaderModel = {
-    imgSrc: './assets/images/gallery/gallery-bg.png',
+    imgSrc: './assets/images/gallery/gallery-bg.jpg',
     imgSrcSmall: './assets/images/gallery/gallery-bg_small.png',
     imgAlt: 'Image indoor preview as background',
     title: 'I NOSTRI PRODOTTI'
