@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { PageGenericHeaderComponent } from './page-generic-header.component';
+import {PageGenericHeaderComponent} from './page-generic-header.component';
 
 describe('PageGenericHeaderComponent', () => {
   let component: PageGenericHeaderComponent;

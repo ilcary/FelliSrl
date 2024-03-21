@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {PageGenericHeaderModel} from "../../shared/components/page-generic-header/page-generic-header.component";
 
 @Component({
@@ -7,6 +7,11 @@ import {PageGenericHeaderModel} from "../../shared/components/page-generic-heade
   styleUrls: ['./contacts.component.scss']
 })
 export class ContactsComponent {
-  protected pageModel: PageGenericHeaderModel = {imgSrc:'./assets/images/contacts/contacts-bg.png', imgAlt: 'Image indoor preview as background', title: 'CONTATTI'};
+  protected pageModel: PageGenericHeaderModel = {
+    imgSrc: './assets/images/contacts/contacts-bg.png',
+    imgSrcSmall: './assets/images/contacts/contacts-bg_small.png',
+    imgAlt: 'Image indoor preview as background',
+    title: 'CONTATTI'
+  };
 
 }

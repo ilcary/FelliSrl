@@ -5,7 +5,7 @@ import {ComponentsModule} from "./components/components.module";
 import {FullLayoutComponent} from "./layout/full-layout/full-layout.component";
 import {HeaderComponent} from "./layout/header/header.component";
 import {MaterialModule} from "../../material.module";
-import { FooterComponent } from './layout/footer/footer.component';
+import {FooterComponent} from './layout/footer/footer.component';
 import {RouterLink, RouterLinkActive} from "@angular/router";
 
 

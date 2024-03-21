@@ -2,6 +2,7 @@ import {Component, Input} from '@angular/core';
 
 export interface PageGenericHeaderModel {
   imgSrc: string;
+  imgSrcSmall: string;
   imgAlt: string;
   title: string;
 }

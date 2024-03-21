@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { AnimatedCardComponent } from './animated-card.component';
+import {AnimatedCardComponent} from './animated-card.component';
 
 describe('AnimatedCardComponent', () => {
   let component: AnimatedCardComponent;

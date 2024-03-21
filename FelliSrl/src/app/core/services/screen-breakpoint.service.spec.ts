@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { ScreenBreakpointService } from './screen-breakpoint.service';
+import {ScreenBreakpointService} from './screen-breakpoint.service';
 
 describe('ScreenBreakpointService', () => {
   let service: ScreenBreakpointService;

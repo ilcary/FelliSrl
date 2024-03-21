@@ -1,4 +1,4 @@
-import { trigger, style, transition, animate, state } from '@angular/animations';
+import {animate, state, style, transition, trigger} from '@angular/animations';
 
 export const slideInAnimation = trigger('slideAnimation', [
   state('in', style({ transform: 'translateY(0)', opacity: 1 })),

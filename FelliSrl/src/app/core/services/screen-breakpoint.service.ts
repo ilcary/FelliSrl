@@ -1,8 +1,8 @@
-import { Injectable, OnDestroy, OnInit } from "@angular/core";
-import { BreakpointObserver } from "@angular/cdk/layout";
-import { BehaviorSubject, distinctUntilChanged, Observable } from "rxjs";
-import { Subject } from "rxjs/internal/Subject";
-import { takeUntil } from "rxjs/operators";
+import {Injectable, OnDestroy, OnInit} from "@angular/core";
+import {BreakpointObserver} from "@angular/cdk/layout";
+import {BehaviorSubject, distinctUntilChanged, Observable} from "rxjs";
+import {Subject} from "rxjs/internal/Subject";
+import {takeUntil} from "rxjs/operators";
 
 export enum Breakpoints {
   "XS" = "XS",

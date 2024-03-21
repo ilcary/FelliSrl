@@ -1,5 +1,9 @@
 @import "/src/assets/scss/variables.scss";
 
+.footer-container{
+  min-height: 300px;
+}
+
 .footer-info{
   background-color: $prussian-blue;
   color: white;

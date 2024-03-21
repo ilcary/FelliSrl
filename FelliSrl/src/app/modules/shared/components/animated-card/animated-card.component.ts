@@ -1,9 +1,9 @@
 import {Component, Input} from '@angular/core';
 
-export interface AnimatedCardContent{
+export interface AnimatedCardContent {
   background: 'blue' | 'red';
   highlightedText: string;
-  action?: ()=>void;
+  linkReference: string;
   headingParagraph:string;
   textParagraph:string;
   logoSrc?:string;
@@ -15,5 +15,5 @@ export interface AnimatedCardContent{
   styleUrls: ['./animated-card.component.scss']
 })
 export class AnimatedCardComponent {
-@Input() animatedCardContent:AnimatedCardContent;
+  @Input() animatedCardContent: AnimatedCardContent;
 }

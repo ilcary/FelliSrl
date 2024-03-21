@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {CardContent, CardInfoContent} from "../../../../core/models/generic.models";
+import {CardInfoContent} from "../../../../core/models/generic.models";
 
 @Component({
   selector: 'app-info-card',
